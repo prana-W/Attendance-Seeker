@@ -6,8 +6,8 @@ This repo contains the extension to check the attendance of any student in <a hr
 
 <h2>Extension Setup</h2>
 
-1. Download .zip file from the releases.
-2. Save the ZIP file to your computer and extract all in your desired location
+1. Download <a href = "https://github.com/prana-W/Attendance-Seeker/releases/download/v1.0/Attendance-Seeker.zip">.zip</a>  file from the releases.
+2. Save the ZIP file to your computer and extract the folder in your desired location.
 3. Open Chrome (or your default browser) and go to chrome://extensions/.
 4. Enable Developer Mode by toggling the switch at the top-right.
 5. Click the Load unpacked button.
