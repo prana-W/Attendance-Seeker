@@ -6,7 +6,7 @@
     "permissions": ["scripting"],
     "host_permissions": ["https://online.nitjsr.ac.in/*"],
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "Pop-Up/popup.html",
       "default_icon": "img.jpg"
     },
     "content_scripts": [
