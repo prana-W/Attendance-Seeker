@@ -18,7 +18,7 @@ That's it!
 
 <hr>
 
-<h2>How to use?</h2>h2>
+<h2>How to use?</h2>
 
 1. You can select any desired roll number from the dropdown as shown in the image below.
 2. After selecting, wait for about 7 seconds (as it takes time from the server)
