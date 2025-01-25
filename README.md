@@ -25,3 +25,7 @@ That's it!
 3. The attendance table automatically gets updated!
 <hr>
 <img src = "ss.png">
+<br>
+<img src = "ss2.png">
+<br>
+<img src = "ss3.png">
