@@ -1,13 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Attendance-Seeker",
-    "version": "1.0",
-    "description": "You can check the attendance of any student using this extension!",
+    "version": "1.1",
+    "description": "You can check the attendance of any student using this extension, along with some new crazy features!",
     "permissions": ["scripting"],
     "host_permissions": ["https://online.nitjsr.ac.in/*"],
     "action": {
       "default_popup": "Pop-Up/popup.html",
-      "default_icon": "img.jpg"
+      "default_icon": "images/img.jpg"
     },
     "content_scripts": [
       {

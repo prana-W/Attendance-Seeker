@@ -24,8 +24,11 @@ That's it!
 2. After selecting, wait for about 7 seconds (as it takes time from fetching data from the server)
 3. The attendance table automatically gets updated!
 <hr>
-<img src = "ss.png">
+
+<h2>What's new?</h2>
+<p>Now, you can check how many classes you can skip to still maintain 80%+ attendance!!</p>
+<img src = "images/ss.png">
 <br>
-<img src = "ss2.png">
+<img src = "images/ss2.png">
 <br>
-<img src = "ss3.png">
+<img src = "images/ss3.png">
