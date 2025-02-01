@@ -26,8 +26,17 @@ That's it!
 <hr>
 
 <h2>What's new?</h2>
-<p>Now, you can check how many classes you can skip to still maintain 80%+ attendance!!</p>
-<p>Change the boring static clock on the website!</p>
+
+<h3>v1.1 (30/01/25)</h3>
+<ul>
+<li>Introduced Class Skip Limit (80%) </li>
+</ul>
+
+<h3>v1.2 (02/02/25)</h3>
+<ul>
+<li>You can choose any desired Class Skip Limit!</li>
+<li>Changed the boring static clock on the website.</li>
+</ul>
 <hr>
 <img src = "images/ss.png">
 <br>
