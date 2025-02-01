@@ -27,6 +27,8 @@ That's it!
 
 <h2>What's new?</h2>
 <p>Now, you can check how many classes you can skip to still maintain 80%+ attendance!!</p>
+<p>Change the boring static clock on the website!</p>
+<hr>
 <img src = "images/ss.png">
 <br>
 <img src = "images/ss2.png">
