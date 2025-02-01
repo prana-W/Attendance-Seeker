@@ -25,7 +25,7 @@
       const numerator = x.substring(0, x.indexOf("/"));
       const denominator = x.substring(x.indexOf("/") + 1, x.length);
 
-      const requiredClass = `numerator /  ${classLimit}/100- denominator`;
+      const requiredClass = numerator / (classLimit/100) - denominator;
 
       if (Math.floor(requiredClass) >= 0) {
         temp[i].innerText = Math.floor(requiredClass);
@@ -33,7 +33,6 @@
     }
   }
 }
-
 
   calculateSurplusClasses()
 
