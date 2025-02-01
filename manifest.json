@@ -12,7 +12,7 @@
     "content_scripts": [
       {
         "matches": ["https://online.nitjsr.ac.in/*.aspx"],
-        "js": ["content.js"]
+        "js": ["JS/content.js", "JS/enhance.js"]
       }
     ]
   }

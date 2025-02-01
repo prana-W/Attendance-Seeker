@@ -1,7 +1,12 @@
 //This removes the feedback coloumn and replaces it by the number of classes that can be left in order to still maintain x% attendance
+{
 
-const calculateSurplusClasses = () => {
-  const temp = document.querySelectorAll("td"); //gets all 'td' from the document
+  //* Adding Class Skip Limit
+
+  function calculateSurplusClasses() {
+  const classLimit = Number (80); //! enter the desired limit here
+
+  const temp = document.querySelectorAll('td'); //gets all 'td' from the document
   const arr = Array.from(temp); //converts the NodeList into an Array
 
   //Below sets an attribute and changes the heading of feedback (useless tbh) cell
@@ -10,7 +15,7 @@ const calculateSurplusClasses = () => {
     .setAttribute("title", "Shows how many classes you can leave to get 80%+");
 
   document.getElementById("ContentPlaceHolder1_gv_lblfeedback").innerText =
-    "Class Skip Limit (80%)";
+    `Class Skip Limit (${classLimit}%)`;
 
   //Below selects the elements containing feedback cells and manipulates them to show the number of classes that can be left!!
   for (let i = 13; i < arr.length; i++) {
@@ -20,16 +25,24 @@ const calculateSurplusClasses = () => {
       const numerator = x.substring(0, x.indexOf("/"));
       const denominator = x.substring(x.indexOf("/") + 1, x.length);
 
-      const requiredClass = numerator / 0.8 - denominator;
+      const requiredClass = `numerator /  ${classLimit/100}- denominator`;
 
       if (Math.floor(requiredClass) >= 0) {
         temp[i].innerText = Math.floor(requiredClass);
       } else temp[i].innerText = 0;
     }
   }
-};
+}
 
-calculateSurplusClasses();
+
+  calculateSurplusClasses()
+
+}
+
+
+{
+
+  //* To check attendance of other students
 
 let flag = 0;
 
@@ -56,7 +69,7 @@ const intervalId = setInterval(() => {
       // Check if the legend text is 'Fetching...'
 
       legend.innerHTML =
-        "<legend>Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Data fetched successfully!)</span></legend>";
+        "Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Data fetched successfully!)</span>";
 
       calculateSurplusClasses();
     }
@@ -72,11 +85,11 @@ const intervalId = setInterval(() => {
         // Change the legend to "Fetching" when an option is selected
         // legend.innerText = "Fetching...";
         legend.innerHTML =
-          "<legend>Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Fetching data...)</span></legend>";
+          "Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Fetching data...)</span>";
         flag = 2;
       });
   }
-}, 1000);
+}, 500);
 
 var legend = document.querySelector("legend");
 
@@ -86,5 +99,7 @@ document
   .addEventListener("change", function () {
     // Change the legend to "Fetching" when an option is selected
     legend.innerHTML =
-      "<legend>Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Fetching data...)</span></legend>";
+      "Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Fetching data...)</span>";
   });
+
+}
