@@ -38,8 +38,8 @@ That's it!
 <li>Changed the boring static clock on the website.</li>
 </ul>
 <hr>
-<img src = "images/ss.png">
+<img src = "images/default.png">
 <br>
-<img src = "images/ss2.png">
+<img src = "images/selecting.png">
 <br>
-<img src = "images/ss3.png">
+<img src = "images/final.png">
