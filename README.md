@@ -1,6 +1,8 @@
 # Attendance-Seeker
 
-This repo contains the extension to check the attendance of any student in <a href = "https://online.nitjsr.ac.in/endsem/StudentAttendance/ClassAttendance.aspx">NIT JSR attendance website</a>
+Master your attendance game! Check others' attendance, plan your class
+      skips wisely, and see how many more you need to hit your
+      target—effortlessly! Works on: <a href = "https://online.nitjsr.ac.in/endsem/StudentAttendance/ClassAttendance.aspx">NIT JSR attendance website</a>
 <br>
 <hr>
 
@@ -42,7 +44,7 @@ That's it!
 
 <h3>v1.3 (10/02/25)</h3>
 <ul>
-<li>You can now check how many classes are required to cross your desired attendance (by default: 75%)</li>
+<li>You can now check how many classes are required to cross your desired attendance (by default: 75%) by clicking on "Switch" button in the last table cell.</li>
 <li>Added an icon for the extension.</li>
 <li>Updated the PopUp window.</li>
 </ul>
