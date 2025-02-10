@@ -39,9 +39,18 @@ That's it!
 <li>You can choose any desired Class Skip Limit!</li>
 <li>Changed the boring static clock on the website.</li>
 </ul>
+
+<h3>v1.3 (10/02/25)</h3>
+<ul>
+<li>You can now check how many classes are required to cross your desired attendance (by default: 75%)</li>
+<li>Added an icon for the extension.</li>
+<li>Updated the PopUp window.</li>
+</ul>
 <hr>
 <img src = "images/default.png">
 <br>
 <img src = "images/selecting.png">
 <br>
 <img src = "images/final.png">
+<br>
+<img src = "images/newFeature.png">
