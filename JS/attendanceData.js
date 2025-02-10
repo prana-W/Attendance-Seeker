@@ -55,7 +55,6 @@ function calculateSurplusClasses() {
     .addEventListener("keydown", (e) => {
       if (e.key == "Enter") {
         e.preventDefault();
-        console.log(Number(e.target.value));
         classLimit = Number(e.target.value);
 
         //Below selects the elements containing feedback cells and manipulates them to show the number of classes that can be left!!
@@ -133,7 +132,6 @@ function calculateDeprivedClasses() {
     .addEventListener("keydown", (e) => {
       if (e.key == "Enter") {
         e.preventDefault();
-        console.log(Number(e.target.value));
         classDeprived = Number(e.target.value);
 
         //Below selects the elements containing feedback cells and manipulates them to show the number of classes that can be left!!

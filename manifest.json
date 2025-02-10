@@ -1,19 +1,23 @@
 {
     "manifest_version": 3,
     "name": "Attendance-Seeker",
-    "version": "1.1",
-    "description": "You can check the attendance of any student using this extension, along with some new crazy features!",
+    "version": "1.3",
+    "description": "Master your attendance game! Check others' attendance, plan your class skips wisely, and see how many more you need to hit your target—effortlessly!",
     "permissions": ["scripting"],
-    "host_permissions": ["https://online.nitjsr.ac.in/*"],
+    "host_permissions": ["https://online.nitjsr.ac.in/endsem/StudentAttendance/*"],
     "action": {
-      "default_popup": "Pop-Up/popup.html",
-      "default_icon": "images/img.jpg"
+      "default_popup": "Pop-Up/popup.html"
     },
+    "icons": {
+    "16": "images/def_48_img.png",
+    "48": "images/def_48_img.png",
+    "128": "images/def_128_img.png"
+  },
     "content_scripts": [
       {
-        "matches": ["https://online.nitjsr.ac.in/*.aspx"],
+        "matches": ["https://online.nitjsr.ac.in/endsem/StudentAttendance/*.aspx"],
         "js": ["JS/checkAttendance.js", "JS/attendanceData.js", "JS/enhance.js"]
       }
     ]
   }
-  
+

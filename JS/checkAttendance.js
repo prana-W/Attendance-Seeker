@@ -6,7 +6,6 @@
   //The function to search for the select tag and remove the disbaled attribute from it
   function trigger(selectTag) {
     selectTag.removeAttribute("disabled");
-    console.log(`Select tag updated!`);
     flag = 1; //when data is fetched succefully
   }
 
