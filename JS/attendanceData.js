@@ -19,7 +19,7 @@ function calculateSurplusClasses() {
     );
 
   document.getElementById("ContentPlaceHolder1_gv_lblfeedback").innerHTML =
-    "Class Skip Limit: <input type='number' id='class-skip-limit' placeholder= 'Click enter! Default: 80%' style='color: black;' enabled> % <button id = 'switchTableContent'>Switch</button>";
+    "Class Skip Limit: <input type='number' id='class-skip-limit' placeholder= 'Hit Enter! Default: 80%' style='color: black;' enabled><button id = 'switchTableContent' style = 'color: black;'>Switch</button>";
 
   setTimeout(() => {
     document
@@ -95,7 +95,7 @@ function calculateDeprivedClasses() {
     );
 
   document.getElementById("ContentPlaceHolder1_gv_lblfeedback").innerHTML =
-    "Class Needed: <input type='number' id='class-skip-limit' placeholder= 'Click enter! Default: 75%' style='color: black;' enabled> % <button id = 'switchTableContent'>Switch</button>";
+    "Class Needed: <input type='number' id='class-skip-limit' placeholder= 'Hit Enter! Default: 75%' style='color: black;' enabled><button id = 'switchTableContent' style = 'color: black;'>Switch</button>";
 
   setTimeout(() => {
     document
