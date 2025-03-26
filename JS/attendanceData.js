@@ -35,8 +35,8 @@ function calculateSurplusClasses() {
       });
   }, 0);
 
-  for (let i = 13; i < arr.length; i++) {
-    if ((i - 13) % 7 === 0) {
+  for (let i = 16; i < arr.length; i++) {
+    if ((i - 16) % 7 === 0) {
       const x = temp[i - 2].innerText;
 
       const numerator = x.substring(0, x.indexOf("/"));
@@ -58,8 +58,8 @@ function calculateSurplusClasses() {
         classLimit = Number(e.target.value);
 
         //Below selects the elements containing feedback cells and manipulates them to show the number of classes that can be left!!
-        for (let i = 13; i < arr.length; i++) {
-          if ((i - 13) % 7 === 0) {
+        for (let i = 16; i < arr.length; i++) {
+          if ((i - 16) % 7 === 0) {
             const x = temp[i - 2].innerText;
 
             const numerator = x.substring(0, x.indexOf("/"));
@@ -111,8 +111,8 @@ function calculateDeprivedClasses() {
       });
   }, 0);
 
-  for (let i = 13; i < arr.length; i++) {
-    if ((i - 13) % 7 === 0) {
+  for (let i = 16; i < arr.length; i++) {
+    if ((i - 16) % 7 === 0) {
       const x = temp[i - 2].innerText;
 
       const numerator = x.substring(0, x.indexOf("/"));
@@ -135,8 +135,8 @@ function calculateDeprivedClasses() {
         classDeprived = Number(e.target.value);
 
         //Below selects the elements containing feedback cells and manipulates them to show the number of classes that can be left!!
-        for (let i = 13; i < arr.length; i++) {
-          if ((i - 13) % 7 === 0) {
+        for (let i = 16; i < arr.length; i++) {
+          if ((i - 16) % 7 === 0) {
             const x = temp[i - 2].innerText;
 
             const numerator = x.substring(0, x.indexOf("/"));
