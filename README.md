@@ -10,7 +10,7 @@ Master your attendance game! Check others' attendance, plan your class
 
 
 
-1. Download <a href = "https://github.com/prana-W/Attendance-Seeker/releases/download/v1.3/Attendance-Seeker.zip">.zip</a>  file from the releases.
+1. Download <a href = "https://github.com/prana-W/Attendance-Seeker/releases/download/v1.3.1/Attendance-Seeker.zip">.zip</a>  file from the releases.
 2. Save the ZIP file to your computer and extract the folder in your desired location.
 3. Open Chrome (or your default browser) and go to: <span><pre>chrome://extensions/</pre></span>
 4. Enable Developer Mode by toggling the switch at the top-right.
