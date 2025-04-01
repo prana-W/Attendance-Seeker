@@ -1,58 +1,89 @@
 # Attendance-Seeker
 
-Master your attendance game! Check others' attendance, plan your class
-      skips wisely, and see how many more you need to hit your
-      target—effortlessly! Works on: <a href = "https://online.nitjsr.ac.in/endsem/StudentAttendance/ClassAttendance.aspx">NIT JSR attendance website</a>
-<br>
-<hr>
+Attendance Seeker is a powerful browser extension designed for students. It helps you check attendance, calculate skippable classes, and determine how many more classes are needed to reach your target attendance. 
 
-<h2>Extension Setup</h2>
+Works on: [NIT JSR Attendance Website](https://online.nitjsr.ac.in/endsem/StudentAttendance/ClassAttendance.aspx)
+
+---
+
+## Extension Setup
+
+Follow these simple steps to install **Attendance-Seeker**:
+
+1. **Download the .zip file** from the [releases section](https://github.com/prana-W/Attendance-Seeker/releases/download/v1.4/Attendance-Seeker.zip).
+
+2. **Save the ZIP file** to your computer and extract it.
+3. **Open Chrome (or your default browser)** and go to:  
+   `chrome://extensions/`
+4. **Enable Developer Mode** by toggling the switch at the top-right of the page.
+5. Click the **Load unpacked** button.
+6. **Select the extracted folder** where you saved the extension files.
+7. The extension will now be **active in your browser**.
+
+---
+
+## How to Use
+
+### 🔹 Check Another Student's Attendance
+- Select the student from the dropdown menu.
+
+- Wait for about **5 seconds**, and the site will update with their attendance.
+
+### 🔹 Find Skippable Classes
+- Enter your target attendance in the **Maximum Attendance Limit** section.
+
+- Press **Enter**, and the site will update with the **total classes you can skip** in each subject.
+
+### 🔹 Find Required Classes to Cross a Target
+- Click the **Switch** button.
+
+- Enter the desired attendance limit.
+- The site will update with the number of **classes required** to cross the entered limit in each subject.
+
+---
+
+## What's New?
+
+### **v1.1 (30/01/25)**  
+- Introduced **Class Skip Limit** (80%).
+
+### **v1.2 (02/02/25)**  
+- You can now **choose any desired Class Skip Limit**!  
+
+- Changed the **boring static clock** on the website.
+
+### **v1.3 (10/02/25)**  
+- You can now **check how many classes are required** to cross your desired attendance by clicking the **Switch** button.
+
+- Added an **icon** for the extension.
+- Updated the **PopUp window** for a better user experience.
+
+### **v1.4 (01/04/25)**  
+
+- Stored classLimit and classDeprived limits in local storage.
+
+- Improved the styling in various component and pop-up.
 
 
+---
 
-1. Download <a href = "https://github.com/prana-W/Attendance-Seeker/releases/download/v1.3.1/Attendance-Seeker.zip">.zip</a>  file from the releases.
-2. Save the ZIP file to your computer and extract the folder in your desired location.
-3. Open Chrome (or your default browser) and go to: <span><pre>chrome://extensions/</pre></span>
-4. Enable Developer Mode by toggling the switch at the top-right.
-5. Click the Load unpacked button.
-6. Select the extracted folder where you saved or extracted the extension files.
-7. The extension will automatically be active in your browser.
+## Screenshots
 
-That's it!
+### Default View  
+![Default View](images/default.png)
 
-<hr>
+### Selecting a Student  
+![Selecting a Student](images/selecting.png)
 
-<h2>How to use?</h2>
+### Final Attendance  
+![Final Attendance](images/final.png)
 
-1. You can select any desired roll number from the dropdown as shown in the image below.
-2. After selecting, wait for about 7 seconds (as it takes time from fetching data from the server)
-3. The attendance table automatically gets updated!
-<hr>
+### Switching Mode  
+![New Feature](images/newFeature.png)
 
-<h2>What's new?</h2>
+### Pop-Up
+![New Feature](images/popup.png)
 
-<h3>v1.1 (30/01/25)</h3>
-<ul>
-<li>Introduced Class Skip Limit (80%) </li>
-</ul>
+---
 
-<h3>v1.2 (02/02/25)</h3>
-<ul>
-<li>You can choose any desired Class Skip Limit!</li>
-<li>Changed the boring static clock on the website.</li>
-</ul>
-
-<h3>v1.3 (10/02/25)</h3>
-<ul>
-<li>You can now check how many classes are required to cross your desired attendance (by default: 75%) by clicking on "Switch" button in the last table cell.</li>
-<li>Added an icon for the extension.</li>
-<li>Updated the PopUp window.</li>
-</ul>
-<hr>
-<img src = "images/default.png">
-<br>
-<img src = "images/selecting.png">
-<br>
-<img src = "images/final.png">
-<br>
-<img src = "images/newFeature.png">
+*Crafted with ❤️ by W.*   
