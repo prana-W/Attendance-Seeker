@@ -10,7 +10,7 @@ Works on: [NIT JSR Attendance Website](https://online.nitjsr.ac.in/endsem/Studen
 
 Follow these simple steps to install **Attendance-Seeker**:
 
-1. **Download the .zip file** from the [releases section](https://github.com/prana-W/Attendance-Seeker/releases/download/v1.4/Attendance-Seeker.zip).
+1. **Download the .zip file** from the [releases section](https://github.com/prana-W/Attendance-Seeker/releases/download/v1.5/Attendance-Seeker.zip).
 
 2. **Save the ZIP file** to your computer and extract it.
 3. **Open Chrome (or your default browser)** and go to:  
