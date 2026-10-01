@@ -1,13 +1,15 @@
-//This removes the feedback coloumn and replaces it by the number of classes that can be left in order to still maintain x% attendance
-
-//* Class Skip Limit
-
 let surplusState = true;
 
+//* Class Skip Limit
 if (!localStorage.getItem("classLimit")) {
-  localStorage.setItem("classLimit", 80);
+  localStorage.setItem("classLimit", 50);
+}
+//* Class Deprived Number
+if (!localStorage.getItem("classDeprived")) {
+  localStorage.setItem("classDeprived", 50);
 }
 
+//This removes the feedback coloumn and replaces it by the number of classes that can be left in order to still maintain x% attendance
 function calculateSurplusClasses() {
   const temp = document.querySelectorAll("td"); //gets all 'td' from the document
   const arr = Array.from(temp); //converts the NodeList into an Array
@@ -19,7 +21,7 @@ function calculateSurplusClasses() {
 
   document.getElementById(
     "ContentPlaceHolder1_gv_lblfeedback"
-  ).innerHTML = `Minimum Attendance Limit: <input type="number" id="class-skip-limit" value="${localStorage.getItem(
+  ).innerHTML = `Skippable: <input type="number" id="class-skip-limit" value="${localStorage.getItem(
     "classLimit"
   )}" 
   style="color: black; width: 70px; height: 28px; border-radius: 6px; padding: 4px; text-align: center; 
@@ -36,9 +38,7 @@ function calculateSurplusClasses() {
   onmouseover="this.style.background='rgb(34, 139, 34)'" 
   onmouseout="this.style.background='rgb(50, 205, 50)'">
   Switch
-</button>
-
-`;
+</button>`;
 
   setTimeout(() => {
     document
@@ -99,14 +99,6 @@ function calculateSurplusClasses() {
     });
 }
 
-calculateSurplusClasses();
-
-//* Class Deprived Number
-
-if (!localStorage.getItem("classDeprived")) {
-  localStorage.setItem("classDeprived", 80);
-}
-
 function calculateDeprivedClasses() {
   const temp = document.querySelectorAll("td"); //gets all 'td' from the document
   const arr = Array.from(temp); //converts the NodeList into an Array
@@ -118,7 +110,7 @@ function calculateDeprivedClasses() {
 
   document.getElementById(
     "ContentPlaceHolder1_gv_lblfeedback"
-  ).innerHTML = `Maximum Attendance Limit: <input type="number" id="class-skip-limit" value="${localStorage.getItem(
+  ).innerHTML = `Needed: <input type="number" id="class-skip-limit" value="${localStorage.getItem(
     "classLimit"
   )}" 
   style="color: black; width: 70px; height: 28px; border-radius: 6px; padding: 4px; text-align: center; 
@@ -197,3 +189,31 @@ function calculateDeprivedClasses() {
       }
     });
 }
+
+// This function explicitly converts the attendace into percentage to override the percentage returned by the server to make the calculation accurate
+function calculatePercentageBecauseSomehowTheOfficialSiteCantCalculatePercentageCorrectly() {
+
+  const temp = document.querySelectorAll("td"); //gets all 'td' from the document
+  const arr = Array.from(temp); //converts the NodeList into an Array
+
+  for (let i = 15; i < arr.length; i++) {
+
+    if ((i - 15) % 7 === 0) {
+
+      const x = temp[i - 1].innerText;
+
+      const numerator = x.substring(0, x.indexOf("/"));
+      const denominator = x.substring(x.indexOf("/") + 1, x.length);
+
+      const percentage = ((Number(numerator) / Number(denominator)) * 100).toFixed(2);
+      
+      temp[i].innerText = percentage;
+      
+    }
+  }  
+}
+
+//! Calling all main functions that run on startup
+
+calculateSurplusClasses();
+calculatePercentageBecauseSomehowTheOfficialSiteCantCalculatePercentageCorrectly();

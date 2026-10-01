@@ -45,25 +45,26 @@ Follow these simple steps to install **Attendance-Seeker**:
 ## What's New?
 
 ### **v1.1 (30/01/25)**  
-- Introduced **Class Skip Limit** (80%).
+- Introduced **Class Skip Limit**.
 
 ### **v1.2 (02/02/25)**  
 - You can now **choose any desired Class Skip Limit**!  
-
 - Changed the **boring static clock** on the website.
 
 ### **v1.3 (10/02/25)**  
 - You can now **check how many classes are required** to cross your desired attendance by clicking the **Switch** button.
-
 - Added an **icon** for the extension.
 - Updated the **PopUp window** for a better user experience.
 
 ### **v1.4 (01/04/25)**  
 
 - Stored classLimit and classDeprived limits in local storage.
-
 - Improved the styling in various component and pop-up.
 
+### **v1.5 (01/10/26)**  
+
+- Override the percentage returned by the server to correct the stale percentage data.
+- Improve wording in UI for better clarity.
 
 ---
 
@@ -86,4 +87,4 @@ Follow these simple steps to install **Attendance-Seeker**:
 
 ---
 
-*Crafted with ❤️ by W.*   
+*Crafted with ❤️ by prana-W.*   

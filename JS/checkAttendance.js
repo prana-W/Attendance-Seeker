@@ -26,7 +26,7 @@ const intervalId = setInterval(() => {
       legend.innerHTML =
         "Class Attendance &nbsp; &nbsp;<span style='color : red; font-size: smaller;' >(Data fetched successfully!)</span>";
 
-      calculateSurplusClasses();
+      calculateDeprivedClasses();
     }
     flag = 0;
   } else if (flag == 0) {

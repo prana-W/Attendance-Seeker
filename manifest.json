@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Attendance-Seeker",
-    "version": "1.4",
+    "version": "1.5",
     "description": "Master your attendance game! Check others' attendance, plan your class skips wisely, and see how many more you need to hit your target—effortlessly!",
     "permissions": ["scripting"],
     "host_permissions": ["https://online.nitjsr.ac.in/endsem/StudentAttendance/*"],
